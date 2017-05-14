@@ -18,13 +18,53 @@
         android:layout_gravity="center"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="139dp" />
+        android:text="Usuario"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:id="@+id/room"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:password="true"
+        android:singleLine="true"
+        android:id="@+id/pass"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnLogin"
+        android:text="Ingresar"
+        />
+
+    <TextView
+        android:id="@+id/badLog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Datos incorrectos"
+        android:textColor="#ff121a"
+        android:visibility="invisible" />
 
 
 </LinearLayout>
