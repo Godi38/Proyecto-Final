@@ -4,30 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.max.uniremington.Home">
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="42dp"
-        android:layout_height="43dp"
-        app:srcCompat="@drawable/salir"
-        app:layout_constraintHorizontal_bias="0.991"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="0dp" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="183dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="165dp"
-        android:visibility="visible"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/inscripcionesabiertas" />
+    tools:context="com.example.max.uniremington.Sedes">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -122,12 +99,12 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
-        android:layout_marginTop="385dp"
-        android:text="Bienestar y Egresados"
+        android:layout_marginTop="383dp"
+        android:text="Boyaca"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.083" />
+        app:layout_constraintHorizontal_bias="0.054" />
 
     <Button
         android:id="@+id/button7"
@@ -135,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginTop="110dp"
-        android:text="Comunidad"
+        android:text=" Bucaramanga"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -147,8 +124,8 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginTop="55dp"
-        android:text="Ubicacion"
-        app:layout_constraintHorizontal_bias="0.055"
+        android:text="Cucuta"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -159,20 +136,20 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginTop="165dp"
-        android:text="Programas"
+        android:text="Manizales"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnsedes"
+        android:id="@+id/btnmedellin"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginTop="0dp"
-        android:text="  Sedes"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:text=" Medellin"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -183,7 +160,7 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginTop="220dp"
-        android:text="Uniremington"
+        android:text="Monteria"
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -192,10 +169,10 @@
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="123dp"
-        android:layout_height="55dp"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
         android:layout_marginTop="275dp"
-        android:text=" Admisiones"
+        android:text="Pasto"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -204,23 +181,37 @@
     <Button
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="132dp"
-        android:layout_height="55dp"
+        android:layout_width="116dp"
+        android:layout_height="53dp"
         android:layout_marginTop="330dp"
-        android:text="Plataformas"
+        android:text="Pereira"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/catmanizales"
-        app:layout_constraintHorizontal_bias="0.505"
+        android:id="@+id/imageView11"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        app:srcCompat="@drawable/logoapp1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         android:layout_marginTop="455dp" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="440dp"
+        android:text="Yopal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.037" />
+
+
 </android.support.constraint.ConstraintLayout>
