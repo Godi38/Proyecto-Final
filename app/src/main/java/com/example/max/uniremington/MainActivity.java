@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     if (usuario.equals("Max")&&contraseña.equals("123456")){
                         //Toast.makeText(this, "Datos correctos", Toast.LENGTH_SHORT).show();
 
-                        Intent ingresar = new Intent(MainActivity.this, Principal.class);
+                        Intent ingresar = new Intent(MainActivity.this, Home.class);
                         startActivity(ingresar);
 
                     }
