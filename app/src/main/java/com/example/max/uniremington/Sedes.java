@@ -15,6 +15,10 @@ public class Sedes extends AppCompatActivity {
     Button Bucaramanga;
     Button Manizales;
     Button Monteria;
+    Button Pasto;
+    Button Pereira;
+    Button Boyaca;
+    Button Yopal;
     ImageView btnatras;
 
     @Override
@@ -29,6 +33,43 @@ public class Sedes extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+        Yopal = (Button)findViewById(R.id.btnyopal);
+        Yopal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intyopal = new Intent(Sedes.this, Yopal.class);
+                startActivity(intyopal);
+            }
+        });
+
+        Boyaca = (Button)findViewById(R.id.btnboyaca);
+        Boyaca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intboyaca = new Intent(Sedes.this, Boyaca.class);
+                startActivity(intboyaca);
+            }
+        });
+
+        Pereira = (Button)findViewById(R.id.btnpereira);
+        Pereira.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intpereira = new Intent(Sedes.this, Pereira.class);
+                startActivity(intpereira);
+            }
+        });
+
+        Pasto = (Button)findViewById(R.id.btnpasto);
+        Pasto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intpasto = new Intent(Sedes.this, Pasto.class);
+                startActivity(intpasto);
+            }
+        });
+
         Monteria = (Button)findViewById(R.id.btnmonteria);
         Monteria.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -12,12 +12,22 @@ public class Home extends AppCompatActivity {
 
     ImageView imageView11;
     Button Sedes;
+    Button Ubicacion;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Ubicacion = (Button)findViewById(R.id.btnubicacion);
+        Ubicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intubicacion = new Intent(Home.this, Maps_Centro.class);
+                startActivity(intubicacion);
+            }
+        });
 
         Sedes = (Button) findViewById(R.id.btnsedes);
         Sedes.setOnClickListener(new View.OnClickListener() {

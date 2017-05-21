@@ -95,7 +95,7 @@
         android:layout_marginTop="71dp" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnboyaca"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
@@ -167,7 +167,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnpasto"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="108dp"
         android:layout_height="53dp"
@@ -179,7 +179,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnpereira"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="116dp"
         android:layout_height="53dp"
@@ -202,7 +202,7 @@
         android:layout_marginTop="455dp" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btnyopal"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
