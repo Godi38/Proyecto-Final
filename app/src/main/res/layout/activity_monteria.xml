@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.max.uniremington.Cucuta">
+    tools:context="com.example.max.uniremington.Monteria">
 
     <WebView
         android:layout_width="368dp"
         android:layout_height="495dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 </android.support.constraint.ConstraintLayout>

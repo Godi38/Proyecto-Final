@@ -21,7 +21,10 @@
         <activity android:name=".Home" />
         <activity android:name=".Sedes" />
         <activity android:name=".Medellin" />
-        <activity android:name=".Cucuta"></activity>
+        <activity android:name=".Cucuta" />
+        <activity android:name=".Bucaramanga" />
+        <activity android:name=".Manizales" />
+        <activity android:name=".Monteria"></activity>
     </application>
 
 </manifest>
