@@ -12,7 +12,7 @@ public class Manizales extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manizales);
 
-        WebView view = (WebView) findViewById(R.id.webView);
+        WebView view = (WebView) findViewById(R.id.manizales);
         view.setWebViewClient(new WebViewClient());
         view.loadUrl("http://www.uniremington.edu.co/manizales/");
     }

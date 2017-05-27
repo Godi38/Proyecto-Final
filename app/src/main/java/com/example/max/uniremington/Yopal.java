@@ -12,8 +12,8 @@ public class Yopal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yopal);
 
-        WebView view = (WebView) findViewById(R.id.webView);
-        view.setWebViewClient(new WebViewClient());
+        WebView view = (WebView) findViewById(R.id.yopal);
+        //view.setWebViewClient(new WebViewClient());
         view.loadUrl("http://www.uniremington.edu.co/yopal/");
 
     }

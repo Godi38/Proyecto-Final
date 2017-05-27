@@ -24,8 +24,6 @@ public class Maps_Centro extends FragmentActivity implements OnMapReadyCallback 
 
     private GoogleMap mMap;
     private Marker marcador;
-    double lat = 0.0;
-    double lng = 0.0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,63 +38,10 @@ public class Maps_Centro extends FragmentActivity implements OnMapReadyCallback 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        miUbicacion();
+        LatLng uniremington = new LatLng(5.056404, -75.487325);
+        mMap.addMarker(new MarkerOptions().position(uniremington).title("Uniremington Manaizales"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(uniremington));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(5.056404,-75.487325 ), 15.0f));
 
     }
-
-    private void agregarMarcador(double lat, double lng) {
-        LatLng coordenadas = new LatLng(lat, lng);
-        CameraUpdate miUbicacion = CameraUpdateFactory.newLatLngZoom(coordenadas, 16);
-        if (marcador != null) marcador.remove();
-        marcador = mMap.addMarker(new MarkerOptions()
-                .position(coordenadas)
-                .title("Aca Estamos")
-                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
-        mMap.animateCamera(miUbicacion);
-    }
-
-    private void actualizarUbicacion(Location location) {
-        if (location != null) {
-            lat = location.getLatitude();
-            lng = location.getLongitude();
-            agregarMarcador(lat, lng);
-        }
-    }
-
-    LocationListener locListener = new LocationListener() {
-        @Override
-        public void onLocationChanged(Location location) {
-            actualizarUbicacion(location);
-        }
-
-        @Override
-        public void onStatusChanged(String provider, int status, Bundle extras) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String provider) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String provider) {
-
-        }
-    };
-
-    private void miUbicacion() {
-
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-            return;
-        }
-
-        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        Location location = locationManager.getLastKnownLocation(locationManager.GPS_PROVIDER);
-        actualizarUbicacion(location);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,15000,0,locListener);
-
-    }
-
 }

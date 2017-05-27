@@ -12,7 +12,7 @@ public class Medellin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medellin);
 
-        WebView view = (WebView) findViewById(R.id.webView);
+        WebView view = (WebView) findViewById(R.id.medellin);
         view.setWebViewClient(new WebViewClient());
         view.loadUrl("http://www.uniremington.edu.co/");
     }

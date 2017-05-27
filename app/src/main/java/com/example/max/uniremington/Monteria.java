@@ -12,7 +12,7 @@ public class Monteria extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monteria);
 
-        WebView view = (WebView) findViewById(R.id.webView);
+        WebView view = (WebView) findViewById(R.id.monteria);
         view.setWebViewClient(new WebViewClient());
         view.loadUrl("http://www.uniremington.edu.co/monteria/");
     }

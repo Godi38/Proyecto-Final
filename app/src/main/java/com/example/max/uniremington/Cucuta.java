@@ -12,7 +12,7 @@ public class Cucuta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cucuta);
 
-        WebView view = (WebView) findViewById(R.id.webView);
+        WebView view = (WebView) findViewById(R.id.cucuta);
         view.setWebViewClient(new WebViewClient());
         view.loadUrl("http://www.uniremington.edu.co/cucuta/");
     }

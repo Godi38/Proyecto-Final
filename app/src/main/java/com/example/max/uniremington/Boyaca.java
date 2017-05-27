@@ -12,7 +12,7 @@ public class Boyaca extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boyaca);
 
-        WebView view = (WebView) findViewById(R.id.webView);
+        WebView view = (WebView) findViewById(R.id.boyaca);
         view.setWebViewClient(new WebViewClient());
         view.loadUrl("http://www.uniremington.edu.co/boyaca/");
 

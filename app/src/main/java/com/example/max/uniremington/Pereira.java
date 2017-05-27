@@ -12,7 +12,7 @@ public class Pereira extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pereira);
 
-        WebView view = (WebView) findViewById(R.id.webView);
+        WebView view = (WebView) findViewById(R.id.pereira);
         view.setWebViewClient(new WebViewClient());
         view.loadUrl("http://www.uniremington.edu.co/pereira/");
 
