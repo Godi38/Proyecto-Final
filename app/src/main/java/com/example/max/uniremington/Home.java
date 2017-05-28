@@ -18,12 +18,23 @@ public class Home extends AppCompatActivity {
     Button Uniremington;
     Button Admisiones;
     Button Plataformas;
+    Button BienestarEgresados;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        BienestarEgresados = (Button)findViewById(R.id.btnbienestaregresados);
+        BienestarEgresados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intbienestaregresados = new Intent(Home.this, BienestarEgresados.class);
+                startActivity(intbienestaregresados);
+            }
+        });
+
 
         Plataformas = (Button)findViewById(R.id.btnplataformas);
         Plataformas.setOnClickListener(new View.OnClickListener() {

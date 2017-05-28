@@ -2,6 +2,8 @@ package com.example.max.uniremington;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class Internacionalizacion extends AppCompatActivity {
 
@@ -9,5 +11,9 @@ public class Internacionalizacion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_internacionalizacion);
+
+        WebView view = (WebView) findViewById(R.id.internacionalizacion);
+        view.setWebViewClient(new WebViewClient());
+        view.loadUrl("http://www.uniremington.edu.co/internacionalizacion.html");
     }
 }

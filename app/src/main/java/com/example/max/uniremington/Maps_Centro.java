@@ -39,7 +39,7 @@ public class Maps_Centro extends FragmentActivity implements OnMapReadyCallback 
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         LatLng uniremington = new LatLng(5.056404, -75.487325);
-        mMap.addMarker(new MarkerOptions().position(uniremington).title("Uniremington Manaizales"));
+        mMap.addMarker(new MarkerOptions().position(uniremington).title("Uniremington Manizales Sede Cable"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(uniremington));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(5.056404,-75.487325 ), 15.0f));
 

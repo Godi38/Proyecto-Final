@@ -22,12 +22,13 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="39dp"
         android:text="Convenios y Descuentos"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.307" />
 
     <ImageView
         android:id="@+id/imageView9"
