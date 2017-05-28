@@ -50,7 +50,9 @@
 
         <activity
             android:name=".Maps_Centro"
-            android:label="@string/title_activity_maps__centro"></activity>
+            android:label="@string/title_activity_maps__centro" />
+        <activity android:name=".Comunidad" />
+        <activity android:name=".Programas"></activity>
     </application>
 
 </manifest>

@@ -13,12 +13,35 @@ public class Home extends AppCompatActivity {
     ImageView imageView11;
     Button Sedes;
     Button Ubicacion;
+    Button Comunidad;
+    Button Programas;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Programas = (Button)findViewById(R.id.btnprogramas);
+        Programas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intprogramas = new Intent(Home.this, Programas.class);
+                startActivity(intprogramas);
+            }
+        });
+
+
+        Comunidad = (Button)findViewById(R.id.btncomunidad);
+        Comunidad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intcomunidad = new Intent(Home.this, Comunidad.class);
+                startActivity(intcomunidad);
+
+            }
+        });
+
 
         Ubicacion = (Button)findViewById(R.id.btnubicacion);
         Ubicacion.setOnClickListener(new View.OnClickListener() {
