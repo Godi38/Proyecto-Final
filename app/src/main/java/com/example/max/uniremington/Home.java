@@ -15,12 +15,45 @@ public class Home extends AppCompatActivity {
     Button Ubicacion;
     Button Comunidad;
     Button Programas;
+    Button Uniremington;
+    Button Admisiones;
+    Button Plataformas;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Plataformas = (Button)findViewById(R.id.btnplataformas);
+        Plataformas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intplataformas = new Intent(Home.this, Plataformas.class);
+                startActivity(intplataformas);
+            }
+        });
+
+
+        Admisiones = (Button)findViewById(R.id.btnadmisiones);
+        Admisiones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intadmisiones = new Intent(Home.this, Admisiones.class);
+                startActivity(intadmisiones);
+            }
+        });
+
+
+        Uniremington = (Button)findViewById(R.id.btnuniremington);
+        Uniremington.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intuniremington = new Intent(Home.this, MisionVision.class);
+                startActivity(intuniremington);
+            }
+        });
+
 
         Programas = (Button)findViewById(R.id.btnprogramas);
         Programas.setOnClickListener(new View.OnClickListener() {

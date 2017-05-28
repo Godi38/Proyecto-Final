@@ -52,7 +52,16 @@
             android:name=".Maps_Centro"
             android:label="@string/title_activity_maps__centro" />
         <activity android:name=".Comunidad" />
-        <activity android:name=".Programas"></activity>
+        <activity android:name=".Programas" />
+        <activity android:name=".MisionVision" />
+        <activity android:name=".Admisiones" />
+        <activity android:name=".Plataformas" />
+        <activity android:name=".Q10" />
+        <activity android:name=".Moodle" />
+        <activity android:name=".Correo" />
+        <activity android:name=".BienestarEgresados" />
+        <activity android:name=".Convenios" />
+        <activity android:name=".Internacionalizacion"></activity>
     </application>
 
 </manifest>
